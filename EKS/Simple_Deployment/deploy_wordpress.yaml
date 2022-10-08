@@ -93,6 +93,7 @@ spec:
       containers:
 
       - image: wordpress:4.8-apache
+      imagePullPolicy: Always
 
         name: wordpress
 
