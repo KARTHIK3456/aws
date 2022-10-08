@@ -40,15 +40,18 @@ metadata:
 
 spec:
 
-  accessModes:
-
+strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
     
 
   resources:
 
     requests:
 
-      storage: 20Gi
+      storage: 1Gi
 
 ---
 
